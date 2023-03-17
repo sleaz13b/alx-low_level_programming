@@ -3,11 +3,11 @@
 #include <stdio.h>
 /*header added */
 /*
- * main - entry point
+ * main - Entry point
  *
- * description: print variable n either positive negative
+ * Description: print variable n either positive negative
  *
- * return - always (0) success
+ * Return - Always 0 (Success)
  */
 /* betty style doc for function main goes there- done */
 
@@ -17,7 +17,12 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	printf("%d\n" n)
-	/* your code goes there */
+	if (n > o)
+		printf("%i is positive\n", n)
+	else if (n ==0)
+		printf("%i is zero\n", n)
+	else
+		printf("%i is negative\n", n)
+
 	return (0);
 }
